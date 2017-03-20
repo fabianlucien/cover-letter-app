@@ -1,0 +1,138 @@
+/* colors */
+
+$black : #000000;
+$white: #FAFAFA;
+$orange: #FE6A4D;
+$light-grey: #C9C9C9;
+
+/* element colors */
+
+$p-color: #424242;
+$bg-helpers: #37474F;
+$bg-cover-letter: #F5F5F5;
+$bg-color-textfield: #FFFFFF;
+$subtitle: #607D8B;
+
+/* font-families */
+$sans-font: 'Open Sans', sans-serif;
+$merri-font: 'Merriweather', serif;
+
+/* padding/margin */
+$default-top-margin: 25px;
+
+
+
+/*      end of variable declarion       */
+
+
+
+html, body {
+  height: 100%;
+}
+
+h4 {
+  font-family: $sans-font;
+  font-weight: 200;
+  font-size: 12px;
+  color: $subtitle;
+}
+
+textarea {
+  background-color: $bg-color-textfield;
+  border: 0px;
+  width: 100%;
+  padding: 5px;
+  font-family: $merri-font;
+  font-size: 20px;
+  height: 150px;
+  border: 0px solid $light-grey;
+  line-height: 22px;
+  color: $p-color;
+  padding: 10px;
+  margin: 5px 0px 15px;
+
+  &:focus {
+    outline: 0px solid $light-grey;
+  }
+}
+
+/* sections */
+
+.helper-fields {
+  padding-top: $default-top-margin;
+  background-color: $bg-helpers;
+  opacity: 0.7;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  overflow-y: scroll;
+  opacity: 0.7;
+  color: white;
+
+  h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    font-weight: 200;
+  }
+
+  textarea {
+    font-size: 12px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.cover-letter {
+  padding-top: $default-top-margin;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: left;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  overflow-y: scroll;
+  background-color: $bg-cover-letter;
+
+  h4 {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+
+  textarea {
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+
+.coverletter-start {
+  textarea { height: 150px; }
+}
+
+.coverletter-body {
+  textarea { height: 250px; }
+}
+
+.coverletter-ending {
+  textarea { height: 150px; }
+}
+
+/* centering and sizes */
+
+.full-height {
+    min-height: 100%;
+    height: 100%;
+}
+
+/* typography */
+
+.center {
+    margin: 0px auto;
+}

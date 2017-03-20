@@ -1,0 +1,11 @@
+{
+  "name": "landing-a-job-landing-page",
+  "version": "0.1.0",
+  "description": "Landing a job landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
