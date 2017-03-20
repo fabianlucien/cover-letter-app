@@ -17,7 +17,7 @@
 
     <!--      introduction     -->
 
-  <body>
+  <body onload="testing()">
 
     <div class='container-fluid' id="main">
       <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -30,16 +30,16 @@
           <h3>helper fields</h3>
 
           <h4 class='h4'>What is the language they speak?</h4>
-          <textarea placeholder="Type here"></textarea>
+          <textarea id='language' placeholder="Type here"></textarea>
 
           <h4 class='h4'>What values do they have?</h4>
-          <textarea placeholder="Type here"></textarea>
+          <textarea id='values' placeholder="Type here"></textarea>
 
           <h4 class='h4'>What do you want to communicate?</h4>
-          <textarea placeholder="Type here"></textarea>
+          <textarea id='user-communicate' placeholder="Type here"></textarea>
 
           <h4 class='h4'>Anything else?</h4>
-          <textarea placeholder="Type here"></textarea>
+          <textarea id='other' placeholder="Type here"></textarea>
 
       </div>
 
@@ -51,26 +51,32 @@
           <div class="coverletter-start">
             <h1>Your cover letter</h1>
             <h4>Start the letter with what they care about</h4>
-            <textarea placeholder="With over 2 years in the teapot industry, I’m well-positioned to contribute X, Y, and Z skills [that you care about] to your team."></textarea>
+            <textarea id='introduction' placeholder="With over 2 years in the teapot industry, I’m well-positioned to contribute X, Y, and Z skills [that you care about] to your team."></textarea>
           </div>
 
           <div class="coverletter-body">
             <h4>Tell me what you have already done and lead the paragraph with what I care about.</h4>
-            <textarea placeholder="Type here"></textarea>
+            <textarea  id='body' placeholder="Type here"></textarea>
           </div>
 
           <div class="coverletter-ending">
             <h4>End by saying you’re excited to contribute</h4>
-            <textarea placeholder="Type here"></textarea>
+            <textarea id='closing' placeholder="Type here"></textarea>
           </div>
 
         </div>
       </div>
     </div>
 
+<input placeholder="type here and see console.">
+
+
+
 
   <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
   </body>
 </html>
